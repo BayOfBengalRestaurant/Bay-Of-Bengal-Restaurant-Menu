@@ -1,2 +1,2 @@
-# Bay-Of-Bengal-Restaurant-Menu
+# Restaurant-Menu
 Dynamic Restaurant Digital Menu
