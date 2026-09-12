@@ -459,24 +459,18 @@ h2 {
     color: #31965e
 }
 .gluten-free {
-    width: 24px;
-    height: 24px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #087a52;
-    border: 1px solid currentColor;
-    border-radius: 50%;
+    width: 24px;
+    height: 24px;
 }
 
-.gluten-free svg {
-    width: 17px;
-    height: 17px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.8;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+.gluten-free img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
 }
 .card-foot {
     display: flex;

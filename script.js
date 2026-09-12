@@ -234,10 +234,10 @@ function card(item) {
   const badgeClass = item.badge === "New" ? "new" : "";
   return `<article class="food-card"><div class="food-image" data-detail="${item.id}">${imageTag(item)}<span class="badge ${badgeClass}">${item.badge}</span></div><div class="card-body"><h3 class="card-title" data-detail="${item.id}">${item.name}</h3><p class="description">${item.desc}</p>
   <div class="indicators">
-  ${item.spicy ? '<span class="spicy" title="Spicy">♨ Spicy</span>' : ""}
-  ${item.veg?'<span class="veg" title="Vegetarian">● Veg</span>':''}
-  ${item.glutenFree?`<span class="gluten-free" title="Gluten Free" aria-label="Gluten Free"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3c4 0 7 3 7 7v2h-2v-2c0-2.8-2.2-5-5-5V3Z"/><path d="M7 7v12M7 11h4M7 15h3"/><path d="M4 4l16 16"/></svg></span>`:''}
-  </div>
+${item.spicy?'<span class="spicy" title="Spicy">♨ Spicy</span>':''}
+${item.veg?'<span class="veg" title="Vegetarian">● Veg</span>':''}
+${item.glutenFree?'<span class="gluten-free" title="Gluten Free"><img src="Images/Gluten-Free-Icon.png" alt="Gluten Free"></span>':''}
+</div>
   <div class="card-foot"><span class="price">${format(item.price)}</span><button class="add-btn" type="button" aria-label="Add ${item.name} to cart" data-add="${item.id}">+</button></div></div></article>`;
 }
 function renderMenu() {
@@ -321,11 +321,12 @@ function showDetail(id) {
   const x = menuItems.find((x) => x.id === id);
   lastFocus = document.activeElement;
   $("#modalContent").innerHTML =
-    `${imageTag(x, "modal-photo")}<div class="modal-body"><p class="eyebrow">${x.category.toUpperCase()} · ${x.badge.toUpperCase()}</p><h2 id="modalTitle">${x.name}</h2><p>${x.desc}</p><div class="indicators">
-    ${x.spicy?'<span class="spicy">♨ Spicy</span>':''}
-    ${x.veg?'<span class="veg">● Vegetarian</span>':''}
-    ${x.glutenFree?`<span class="gluten-free" title="Gluten Free" aria-label="Gluten Free"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3c4 0 7 3 7 7v2h-2v-2c0-2.8-2.2-5-5-5V3Z"/><path d="M7 7v12M7 11h4M7 15h3"/><path d="M4 4l16 16"/></svg></span>`:''}
-     </div>
+    `${imageTag(x, "modal-photo")}<div class="modal-body"><p class="eyebrow">${x.category.toUpperCase()} · ${x.badge.toUpperCase()}</p><h2 id="modalTitle">${x.name}</h2><p>${x.desc}</p>
+    <div class="indicators">
+${x.spicy?'<span class="spicy">♨ Spicy</span>':''}
+${x.veg?'<span class="veg">● Vegetarian</span>':''}
+${x.glutenFree?'<span class="gluten-free" title="Gluten Free"><img src="Images/Gluten-Free-Icon.png" alt="Gluten Free"></span>':''}
+</div>
     <div class="modal-bottom"><strong class="price">${format(x.price)}</strong><button class="add-wide" type="button" data-add="${x.id}">Add to order +</button></div></div>`;
   $("#modalBackdrop").hidden = false;
   requestAnimationFrame(() => {
