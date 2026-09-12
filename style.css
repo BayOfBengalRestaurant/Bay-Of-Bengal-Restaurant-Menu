@@ -851,7 +851,12 @@ footer {
     flex-wrap: wrap;
     font-size: 12px
 }
-
+.footer-logo {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    display: block;
+}
 .footer-brand {
     display: flex;
     align-items: center;
