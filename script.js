@@ -1,38 +1,443 @@
 /* Edit menuItems to change dishes. This plain data layer can later be replaced by a Supabase fetch. */
 const menuItems = [
-    { id: 1, name: 'Lamb Sizzling', category: 'Beef', price: 12.90, desc: 'Lamb cooked with onions, green peppers garlic and ginger, fresh tomatoes. Patato chopped with indian gerbs & spices in a olive oil & soy sauce slightly spicy', image: 'Images/Lamb Sizzling.jpeg', badge: 'Best Seller', spicy: true, veg: false, featured: true },
-    { id: 2, name: 'Bengal Prawn Curry', category: 'Seafood', price: 16.50, desc: 'Tiger prawns in a fragrant coconut mustard curry.', image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=700&q=80', badge: 'Popular', spicy: true, veg: false, featured: true },
-    { id: 3, name: 'Smoky Chicken Kebab', category: 'Chicken', price: 12.90, desc: 'Charcoal-kissed chicken, mint yogurt and salad.', image: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=700&q=80', badge: 'Popular', spicy: true, veg: false, featured: true },
-    { id: 4, name: 'Royal Kacchi Biryani', category: 'Rice & Biryani', price: 15.90, desc: 'Aromatic basmati, tender lamb and golden potato.', image: 'https://images.unsplash.com/photo-1701579231305-d84d8af9a3b3?auto=format&fit=crop&w=700&q=80', badge: 'Best Seller', spicy: false, veg: false, featured: true },
-    { id: 5, name: 'Mango Lassi', category: 'Drinks', price: 5.50, desc: 'Creamy chilled yogurt with ripe mango.', image: 'https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=700&q=80', badge: 'New', spicy: false, veg: true, featured: true },
-    { id: 6, name: 'Masala Omelette', category: 'Breakfast', price: 7.20, desc: 'Fluffy eggs with onion, chilli and fresh coriander.', image: 'https://images.unsplash.com/photo-1510693206972-df098062cb71?auto=format&fit=crop&w=700&q=80', badge: 'Popular', spicy: true, veg: false },
-    { id: 7, name: 'Lentil Soup', category: 'Starters', price: 6.50, desc: 'Slow-cooked yellow lentils, garlic and lime.', image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=700&q=80', badge: 'New', spicy: false, veg: true },
-    { id: 8, name: 'Crispy Fish Fry', category: 'Starters', price: 9.80, desc: 'Spiced river fish, fried crisp with kasundi.', image: 'https://images.unsplash.com/photo-1544982503-9f984c14501a?auto=format&fit=crop&w=700&q=80', badge: 'Popular', spicy: true, veg: false },
-    { id: 9, name: 'Mustard Hilsa', category: 'Seafood', price: 19.50, desc: 'Iconic hilsa in silky mustard and green chilli.', image: 'https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?auto=format&fit=crop&w=700&q=80', badge: 'Best Seller', spicy: true, veg: false },
-    { id: 10, name: 'Dhaka Beef Bhuna', category: 'Beef', price: 14.90, desc: 'Slow braised beef with bold roasted spices.', image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=700&q=80', badge: 'Popular', spicy: true, veg: false },
-    { id: 11, name: 'Vegetable Khichuri', category: 'Main Course', price: 10.50, desc: 'Comforting rice and lentils with seasonal vegetables.', image: 'https://images.unsplash.com/photo-1596450514735-111a2fe02935?auto=format&fit=crop&w=700&q=80', badge: 'New', spicy: false, veg: true },
-    { id: 12, name: 'Butter Chicken', category: 'Chicken', price: 14.20, desc: 'Tender chicken in a velvety tomato cashew sauce.', image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80', badge: 'Best Seller', spicy: false, veg: false },
-    { id: 13, name: 'Naan Basket', category: 'Main Course', price: 4.90, desc: 'Warm garlic, butter and plain naan selection.', image: 'https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=700&q=80', badge: 'New', spicy: false, veg: true },
-    { id: 14, name: 'Bengal Iced Tea', category: 'Drinks', price: 4.50, desc: 'Black tea, citrus, basil and cane sugar.', image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=700&q=80', badge: 'New', spicy: false, veg: true },
-    { id: 15, name: 'Mishti Doi', category: 'Desserts', price: 5.90, desc: 'Traditional caramelized sweet yogurt.', image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80', badge: 'Popular', spicy: false, veg: true },
-    { id: 16, name: 'Coconut Pudding', category: 'Desserts', price: 6.50, desc: 'Silky coconut cream with toasted pistachio.', image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80', badge: 'New', spicy: false, veg: true }
+  {
+    id: 1,
+    name: "Lamb Sizzling",
+    category: "Beef",
+    price: 12.9,
+    desc: "Lamb cooked with onions, green peppers garlic and ginger, fresh tomatoes. Patato chopped with indian gerbs & spices in a olive oil & soy sauce slightly spicy",
+    image: "Images/Lamb Sizzling.jpeg",
+    badge: "Best Seller",
+    spicy: true,
+    veg: false,
+    glutenFree: true,
+    featured: true,
+  },
+  {
+    id: 2,
+    name: "Bengal Prawn Curry",
+    category: "Seafood",
+    price: 16.5,
+    desc: "Tiger prawns in a fragrant coconut mustard curry.",
+    image:
+      "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=700&q=80",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+    featured: true,
+  },
+  {
+    id: 3,
+    name: "Smoky Chicken Kebab",
+    category: "Chicken",
+    price: 12.9,
+    desc: "Charcoal-kissed chicken, mint yogurt and salad.",
+    image:
+      "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=700&q=80",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+    featured: true,
+  },
+  {
+    id: 4,
+    name: "Royal Kacchi Biryani",
+    category: "Rice & Biryani",
+    price: 15.9,
+    desc: "Aromatic basmati, tender lamb and golden potato.",
+    image:
+      "https://images.unsplash.com/photo-1701579231305-d84d8af9a3b3?auto=format&fit=crop&w=700&q=80",
+    badge: "Best Seller",
+    spicy: false,
+    veg: false,
+    featured: true,
+  },
+  {
+    id: 5,
+    name: "Mango Lassi",
+    category: "Drinks",
+    price: 5.5,
+    desc: "Creamy chilled yogurt with ripe mango.",
+    image:
+      "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=700&q=80",
+    badge: "New",
+    spicy: false,
+    veg: true,
+    featured: true,
+  },
+  {
+    id: 6,
+    name: "Masala Omelette",
+    category: "Breakfast",
+    price: 7.2,
+    desc: "Fluffy eggs with onion, chilli and fresh coriander.",
+    image:
+      "https://images.unsplash.com/photo-1510693206972-df098062cb71?auto=format&fit=crop&w=700&q=80",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+  },
+  {
+    id: 7,
+    name: "Lentil Soup",
+    category: "Starters",
+    price: 6.5,
+    desc: "Slow-cooked yellow lentils, garlic and lime.",
+    image:
+      "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=700&q=80",
+    badge: "New",
+    spicy: false,
+    veg: true,
+  },
+  {
+    id: 8,
+    name: "Crispy Fish Fry",
+    category: "Starters",
+    price: 9.8,
+    desc: "Spiced river fish, fried crisp with kasundi.",
+    image:
+      "https://images.unsplash.com/photo-1544982503-9f984c14501a?auto=format&fit=crop&w=700&q=80",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+  },
+  {
+    id: 9,
+    name: "Mustard Hilsa",
+    category: "Seafood",
+    price: 19.5,
+    desc: "Iconic hilsa in silky mustard and green chilli.",
+    image:
+      "https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?auto=format&fit=crop&w=700&q=80",
+    badge: "Best Seller",
+    spicy: true,
+    veg: false,
+  },
+  {
+    id: 10,
+    name: "Dhaka Beef Bhuna",
+    category: "Beef",
+    price: 14.9,
+    desc: "Slow braised beef with bold roasted spices.",
+    image:
+      "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=700&q=80",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+  },
+  {
+    id: 11,
+    name: "Vegetable Khichuri",
+    category: "Main Course",
+    price: 10.5,
+    desc: "Comforting rice and lentils with seasonal vegetables.",
+    image:
+      "https://images.unsplash.com/photo-1596450514735-111a2fe02935?auto=format&fit=crop&w=700&q=80",
+    badge: "New",
+    spicy: false,
+    veg: true,
+  },
+  {
+    id: 12,
+    name: "Butter Chicken",
+    category: "Chicken",
+    price: 14.2,
+    desc: "Tender chicken in a velvety tomato cashew sauce.",
+    image:
+      "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80",
+    badge: "Best Seller",
+    spicy: false,
+    veg: false,
+  },
+  {
+    id: 13,
+    name: "Naan Basket",
+    category: "Main Course",
+    price: 4.9,
+    desc: "Warm garlic, butter and plain naan selection.",
+    image:
+      "https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=700&q=80",
+    badge: "New",
+    spicy: false,
+    veg: true,
+  },
+  {
+    id: 14,
+    name: "Bengal Iced Tea",
+    category: "Drinks",
+    price: 4.5,
+    desc: "Black tea, citrus, basil and cane sugar.",
+    image:
+      "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=700&q=80",
+    badge: "New",
+    spicy: false,
+    veg: true,
+  },
+  {
+    id: 15,
+    name: "Mishti Doi",
+    category: "Desserts",
+    price: 5.9,
+    desc: "Traditional caramelized sweet yogurt.",
+    image:
+      "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80",
+    badge: "Popular",
+    spicy: false,
+    veg: true,
+  },
+  {
+    id: 16,
+    name: "Coconut Pudding",
+    category: "Desserts",
+    price: 6.5,
+    desc: "Silky coconut cream with toasted pistachio.",
+    image:
+      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80",
+    badge: "New",
+    spicy: false,
+    veg: true,
+  },
 ];
-const categories = ['All', 'Breakfast', 'Starters', 'Main Course', 'Seafood', 'Chicken', 'Beef', 'Rice & Biryani', 'Drinks', 'Desserts'];
-let activeCategory = 'All', query = '', cart = JSON.parse(localStorage.getItem('bob-cart') || '[]'), lastFocus;
-const $ = s => document.querySelector(s), format = n => `€${n.toFixed(2)}`;
-const grid = $('#foodGrid'), categoriesEl = $('#categories'), toast = $('#toast');
-function imageTag(item, cls = '') { return `<img class="${cls}" src="${item.image}" alt="${item.name}" loading="lazy" decoding="async">` }
-function renderCategories() { categoriesEl.innerHTML = categories.map(c => `<button class="category" role="tab" aria-selected="${c === activeCategory}" data-category="${c}">${c}</button>`).join('') }
-function card(item) { const badgeClass = item.badge === 'New' ? 'new' : ''; return `<article class="food-card"><div class="food-image" data-detail="${item.id}">${imageTag(item)}<span class="badge ${badgeClass}">${item.badge}</span></div><div class="card-body"><h3 class="card-title" data-detail="${item.id}">${item.name}</h3><p class="description">${item.desc}</p><div class="indicators">${item.spicy ? '<span class="spicy" title="Spicy">♨ Spicy</span>' : ''}${item.veg ? '<span class="veg" title="Vegetarian">● Veg</span>' : ''}</div><div class="card-foot"><span class="price">${format(item.price)}</span><button class="add-btn" type="button" aria-label="Add ${item.name} to cart" data-add="${item.id}">+</button></div></div></article>` }
-function renderMenu() { const filtered = menuItems.filter(x => (activeCategory === 'All' || x.category === activeCategory) && (`${x.name} ${x.desc} ${x.category}`).toLowerCase().includes(query)); grid.innerHTML = filtered.map(card).join(''); $('#noResults').hidden = !!filtered.length; $('#resultCount').textContent = `${filtered.length} dish${filtered.length === 1 ? '' : 'es'}` }
-function renderFeatured() { const picks = menuItems.filter(x => x.featured).slice(0, 5); $('#recommendationTrack').innerHTML = picks.map(x => `<article class="recommendation-card" tabindex="0" role="button" data-detail="${x.id}" aria-label="View ${x.name}">${imageTag(x)}<div><small>${x.badge.toUpperCase()}</small><h3>${x.name}</h3><span>${format(x.price)}</span></div></article>`).join('') }
-function saveCart() { localStorage.setItem('bob-cart', JSON.stringify(cart)) }
-function add(id) { const line = cart.find(x => x.id === id); line ? line.qty++ : cart.push({ id, qty: 1 }); saveCart(); renderCart(); showToast(`${menuItems.find(x => x.id === id).name} added to your order`) }
-function update(id, delta) { const line = cart.find(x => x.id === id); if (!line) return; line.qty += delta; if (line.qty <= 0) cart = cart.filter(x => x.id !== id); saveCart(); renderCart() }
-function renderCart() { const entries = cart.map(line => ({ item: menuItems.find(x => x.id === line.id), qty: line.qty })); const count = cart.reduce((n, x) => n + x.qty, 0), sub = entries.reduce((n, { item, qty }) => n + item.price * qty, 0), service = sub ? sub * .05 : 0; $('#cartCount').textContent = count; $('#cartItems').innerHTML = entries.map(({ item, qty }) => `<div class="cart-row">${imageTag(item)}<div><h3>${item.name}</h3><p>${format(item.price)}</p><div class="quantity"><button type="button" data-change="${item.id}" data-delta="-1" aria-label="Decrease ${item.name}">−</button><span>${qty}</span><button type="button" data-change="${item.id}" data-delta="1" aria-label="Increase ${item.name}">+</button></div></div><button class="remove-btn" type="button" data-remove="${item.id}" aria-label="Remove ${item.name}">×</button></div>`).join(''); $('#cartEmpty').hidden = !!entries.length; $('#cartSummary').hidden = !entries.length; $('#subtotal').textContent = format(sub); $('#serviceCharge').textContent = format(service); $('#total').textContent = format(sub + service) }
-function openCart() { lastFocus = document.activeElement; $('#drawerBackdrop').hidden = false; requestAnimationFrame(() => { $('#drawerBackdrop').classList.add('open'); $('#cartDrawer').classList.add('open'); $('#cartDrawer').setAttribute('aria-hidden', 'false'); $('#cartDrawer').focus() }) } function closeCart() { const d = $('#cartDrawer'); d.classList.remove('open'); $('#drawerBackdrop').classList.remove('open'); d.setAttribute('aria-hidden', 'true'); setTimeout(() => $('#drawerBackdrop').hidden = true, 260); lastFocus?.focus() }
-function showDetail(id) { const x = menuItems.find(x => x.id === id); lastFocus = document.activeElement; $('#modalContent').innerHTML = `${imageTag(x, 'modal-photo')}<div class="modal-body"><p class="eyebrow">${x.category.toUpperCase()} · ${x.badge.toUpperCase()}</p><h2 id="modalTitle">${x.name}</h2><p>${x.desc}</p><div class="indicators">${x.spicy ? '<span class="spicy">♨ Spicy</span>' : ''}${x.veg ? '<span class="veg">● Vegetarian</span>' : ''}</div><div class="modal-bottom"><strong class="price">${format(x.price)}</strong><button class="add-wide" type="button" data-add="${x.id}">Add to order +</button></div></div>`; $('#modalBackdrop').hidden = false; requestAnimationFrame(() => { $('#modalBackdrop').classList.add('open'); $('#foodModal').classList.add('open'); $('#foodModal').setAttribute('aria-hidden', 'false'); $('#foodModal').focus() }) } function closeModal() { const m = $('#foodModal'); m.classList.remove('open'); $('#modalBackdrop').classList.remove('open'); m.setAttribute('aria-hidden', 'true'); setTimeout(() => $('#modalBackdrop').hidden = true, 260); lastFocus?.focus() }
-let toastTimer; function showToast(message) { toast.textContent = message; toast.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove('show'), 2600) }
-categoriesEl.addEventListener('click', e => { if (!e.target.matches('[data-category]')) return; activeCategory = e.target.dataset.category; renderCategories(); renderMenu() }); document.addEventListener('click', e => { const addBtn = e.target.closest('[data-add]'); if (addBtn) { add(+addBtn.dataset.add); return } const detail = e.target.closest('[data-detail]'); if (detail) showDetail(+detail.dataset.detail) }); document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeCart(); closeModal() } if (e.key === 'Enter' && e.target.matches('[data-detail]')) showDetail(+e.target.dataset.detail) });
-$('#searchInput').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); $('#clearSearch').hidden = !query; renderMenu() }); $('#clearSearch').onclick = () => { $('#searchInput').value = ''; query = ''; $('#clearSearch').hidden = true; renderMenu(); $('#searchInput').focus() }; $('#resetFilters').onclick = () => { activeCategory = 'All'; query = ''; $('#searchInput').value = ''; renderCategories(); renderMenu() }; $('#cartButton').onclick = openCart; $('#closeCart').onclick = closeCart; $('#drawerBackdrop').onclick = closeCart; $('#closeModal').onclick = closeModal; $('#modalBackdrop').onclick = closeModal; $('.close-cart-button').onclick = closeCart; $('#cartItems').onclick = e => { const change = e.target.closest('[data-change]'); const remove = e.target.closest('[data-remove]'); if (change) update(+change.dataset.change, +change.dataset.delta); if (remove) { cart = cart.filter(x => x.id !== +remove.dataset.remove); saveCart(); renderCart() } }; $('#clearCart').onclick = () => { cart = []; saveCart(); renderCart(); showToast('Cart cleared') }; $('#orderButton').onclick = () => { showToast('Order request received — we’ll be right with you!'); cart = []; saveCart(); renderCart(); closeCart() };
-const theme = $('.theme-toggle'); function setTheme(dark) { document.body.classList.toggle('dark', dark); theme.innerHTML = `<span aria-hidden="true">${dark ? '☀' : '☾'}</span>`; theme.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} mode`); localStorage.setItem('bob-theme', dark ? 'dark' : 'light') } setTheme(localStorage.getItem('bob-theme') === 'dark'); theme.onclick = () => setTheme(!document.body.classList.contains('dark')); $('#backTop').onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' }); window.addEventListener('scroll', () => $('#backTop').classList.toggle('visible', scrollY > 550), { passive: true }); $('#year').textContent = new Date().getFullYear(); renderCategories(); renderFeatured(); renderMenu(); renderCart();
+const categories = [
+  "All",
+  "Breakfast",
+  "Starters",
+  "Main Course",
+  "Seafood",
+  "Chicken",
+  "Beef",
+  "Rice & Biryani",
+  "Drinks",
+  "Desserts",
+];
+let activeCategory = "All",
+  query = "",
+  cart = JSON.parse(localStorage.getItem("bob-cart") || "[]"),
+  lastFocus;
+const $ = (s) => document.querySelector(s),
+  format = (n) => `€${n.toFixed(2)}`;
+const grid = $("#foodGrid"),
+  categoriesEl = $("#categories"),
+  toast = $("#toast");
+function imageTag(item, cls = "") {
+  return `<img class="${cls}" src="${item.image}" alt="${item.name}" loading="lazy" decoding="async">`;
+}
+function renderCategories() {
+  categoriesEl.innerHTML = categories
+    .map(
+      (c) =>
+        `<button class="category" role="tab" aria-selected="${c === activeCategory}" data-category="${c}">${c}</button>`,
+    )
+    .join("");
+}
+function card(item) {
+  const badgeClass = item.badge === "New" ? "new" : "";
+  return `<article class="food-card"><div class="food-image" data-detail="${item.id}">${imageTag(item)}<span class="badge ${badgeClass}">${item.badge}</span></div><div class="card-body"><h3 class="card-title" data-detail="${item.id}">${item.name}</h3><p class="description">${item.desc}</p>
+  <div class="indicators">
+  ${item.spicy ? '<span class="spicy" title="Spicy">♨ Spicy</span>' : ""}
+  ${item.veg ? '<span class="veg" title="Vegetarian">● Veg</span>' : ""}
+  ${item.glutenFree?'<span class="gluten-free" title="Gluten Free">GF Gluten Free</span>':''}
+  </div>
+  <div class="card-foot"><span class="price">${format(item.price)}</span><button class="add-btn" type="button" aria-label="Add ${item.name} to cart" data-add="${item.id}">+</button></div></div></article>`;
+}
+function renderMenu() {
+  const filtered = menuItems.filter(
+    (x) =>
+      (activeCategory === "All" || x.category === activeCategory) &&
+      `${x.name} ${x.desc} ${x.category}`.toLowerCase().includes(query),
+  );
+  grid.innerHTML = filtered.map(card).join("");
+  $("#noResults").hidden = !!filtered.length;
+  $("#resultCount").textContent =
+    `${filtered.length} dish${filtered.length === 1 ? "" : "es"}`;
+}
+function renderFeatured() {
+  const picks = menuItems.filter((x) => x.featured).slice(0, 5);
+  $("#recommendationTrack").innerHTML = picks
+    .map(
+      (x) =>
+        `<article class="recommendation-card" tabindex="0" role="button" data-detail="${x.id}" aria-label="View ${x.name}">${imageTag(x)}<div><small>${x.badge.toUpperCase()}</small><h3>${x.name}</h3><span>${format(x.price)}</span></div></article>`,
+    )
+    .join("");
+}
+function saveCart() {
+  localStorage.setItem("bob-cart", JSON.stringify(cart));
+}
+function add(id) {
+  const line = cart.find((x) => x.id === id);
+  line ? line.qty++ : cart.push({ id, qty: 1 });
+  saveCart();
+  renderCart();
+  showToast(`${menuItems.find((x) => x.id === id).name} added to your order`);
+}
+function update(id, delta) {
+  const line = cart.find((x) => x.id === id);
+  if (!line) return;
+  line.qty += delta;
+  if (line.qty <= 0) cart = cart.filter((x) => x.id !== id);
+  saveCart();
+  renderCart();
+}
+function renderCart() {
+  const entries = cart.map((line) => ({
+    item: menuItems.find((x) => x.id === line.id),
+    qty: line.qty,
+  }));
+  const count = cart.reduce((n, x) => n + x.qty, 0),
+    sub = entries.reduce((n, { item, qty }) => n + item.price * qty, 0),
+    service = sub ? sub * 0.05 : 0;
+  $("#cartCount").textContent = count;
+  $("#cartItems").innerHTML = entries
+    .map(
+      ({ item, qty }) =>
+        `<div class="cart-row">${imageTag(item)}<div><h3>${item.name}</h3><p>${format(item.price)}</p><div class="quantity"><button type="button" data-change="${item.id}" data-delta="-1" aria-label="Decrease ${item.name}">−</button><span>${qty}</span><button type="button" data-change="${item.id}" data-delta="1" aria-label="Increase ${item.name}">+</button></div></div><button class="remove-btn" type="button" data-remove="${item.id}" aria-label="Remove ${item.name}">×</button></div>`,
+    )
+    .join("");
+  $("#cartEmpty").hidden = !!entries.length;
+  $("#cartSummary").hidden = !entries.length;
+  $("#subtotal").textContent = format(sub);
+  $("#serviceCharge").textContent = format(service);
+  $("#total").textContent = format(sub + service);
+}
+function openCart() {
+  lastFocus = document.activeElement;
+  $("#drawerBackdrop").hidden = false;
+  requestAnimationFrame(() => {
+    $("#drawerBackdrop").classList.add("open");
+    $("#cartDrawer").classList.add("open");
+    $("#cartDrawer").setAttribute("aria-hidden", "false");
+    $("#cartDrawer").focus();
+  });
+}
+function closeCart() {
+  const d = $("#cartDrawer");
+  d.classList.remove("open");
+  $("#drawerBackdrop").classList.remove("open");
+  d.setAttribute("aria-hidden", "true");
+  setTimeout(() => ($("#drawerBackdrop").hidden = true), 260);
+  lastFocus?.focus();
+}
+function showDetail(id) {
+  const x = menuItems.find((x) => x.id === id);
+  lastFocus = document.activeElement;
+  $("#modalContent").innerHTML =
+    `${imageTag(x, "modal-photo")}<div class="modal-body"><p class="eyebrow">${x.category.toUpperCase()} · ${x.badge.toUpperCase()}</p><h2 id="modalTitle">${x.name}</h2><p>${x.desc}</p><div class="indicators">
+    ${x.spicy?'<span class="spicy">♨ Spicy</span>':''}
+    ${x.veg?'<span class="veg">● Vegetarian</span>':''}
+    ${x.glutenFree?'<span class="gluten-free">GF Gluten Free</span>':''}
+     </div>
+    <div class="modal-bottom"><strong class="price">${format(x.price)}</strong><button class="add-wide" type="button" data-add="${x.id}">Add to order +</button></div></div>`;
+  $("#modalBackdrop").hidden = false;
+  requestAnimationFrame(() => {
+    $("#modalBackdrop").classList.add("open");
+    $("#foodModal").classList.add("open");
+    $("#foodModal").setAttribute("aria-hidden", "false");
+    $("#foodModal").focus();
+  });
+}
+function closeModal() {
+  const m = $("#foodModal");
+  m.classList.remove("open");
+  $("#modalBackdrop").classList.remove("open");
+  m.setAttribute("aria-hidden", "true");
+  setTimeout(() => ($("#modalBackdrop").hidden = true), 260);
+  lastFocus?.focus();
+}
+let toastTimer;
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("show"), 2600);
+}
+categoriesEl.addEventListener("click", (e) => {
+  if (!e.target.matches("[data-category]")) return;
+  activeCategory = e.target.dataset.category;
+  renderCategories();
+  renderMenu();
+});
+document.addEventListener("click", (e) => {
+  const addBtn = e.target.closest("[data-add]");
+  if (addBtn) {
+    add(+addBtn.dataset.add);
+    return;
+  }
+  const detail = e.target.closest("[data-detail]");
+  if (detail) showDetail(+detail.dataset.detail);
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeCart();
+    closeModal();
+  }
+  if (e.key === "Enter" && e.target.matches("[data-detail]"))
+    showDetail(+e.target.dataset.detail);
+});
+$("#searchInput").addEventListener("input", (e) => {
+  query = e.target.value.trim().toLowerCase();
+  $("#clearSearch").hidden = !query;
+  renderMenu();
+});
+$("#clearSearch").onclick = () => {
+  $("#searchInput").value = "";
+  query = "";
+  $("#clearSearch").hidden = true;
+  renderMenu();
+  $("#searchInput").focus();
+};
+$("#resetFilters").onclick = () => {
+  activeCategory = "All";
+  query = "";
+  $("#searchInput").value = "";
+  renderCategories();
+  renderMenu();
+};
+$("#cartButton").onclick = openCart;
+$("#closeCart").onclick = closeCart;
+$("#drawerBackdrop").onclick = closeCart;
+$("#closeModal").onclick = closeModal;
+$("#modalBackdrop").onclick = closeModal;
+$(".close-cart-button").onclick = closeCart;
+$("#cartItems").onclick = (e) => {
+  const change = e.target.closest("[data-change]");
+  const remove = e.target.closest("[data-remove]");
+  if (change) update(+change.dataset.change, +change.dataset.delta);
+  if (remove) {
+    cart = cart.filter((x) => x.id !== +remove.dataset.remove);
+    saveCart();
+    renderCart();
+  }
+};
+$("#clearCart").onclick = () => {
+  cart = [];
+  saveCart();
+  renderCart();
+  showToast("Cart cleared");
+};
+$("#orderButton").onclick = () => {
+  showToast("Order request received — we’ll be right with you!");
+  cart = [];
+  saveCart();
+  renderCart();
+  closeCart();
+};
+const theme = $(".theme-toggle");
+function setTheme(dark) {
+  document.body.classList.toggle("dark", dark);
+  theme.innerHTML = `<span aria-hidden="true">${dark ? "☀" : "☾"}</span>`;
+  theme.setAttribute("aria-label", `Switch to ${dark ? "light" : "dark"} mode`);
+  localStorage.setItem("bob-theme", dark ? "dark" : "light");
+}
+setTheme(localStorage.getItem("bob-theme") === "dark");
+theme.onclick = () => setTheme(!document.body.classList.contains("dark"));
+$("#backTop").onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+window.addEventListener(
+  "scroll",
+  () => $("#backTop").classList.toggle("visible", scrollY > 550),
+  { passive: true },
+);
+$("#year").textContent = new Date().getFullYear();
+renderCategories();
+renderFeatured();
+renderMenu();
+renderCart();
