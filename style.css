@@ -145,11 +145,7 @@ input:focus-visible {
 
 .hero .eyebrow {
     color: #f9d797;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 12px;
 }
 
 
@@ -166,8 +162,8 @@ h2 {
 }
 
 .hero h1 b {
-    color: #f9d797;
-    font-weight: 600
+    color: #f7c25f;
+    font-weight: 600;
 }
 
 .tagline {
