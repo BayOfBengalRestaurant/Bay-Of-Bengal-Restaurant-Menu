@@ -144,12 +144,12 @@ input:focus-visible {
 }
 
 .hero .eyebrow {
-    color: #f9d797;
-    font-size: 13px;
-    font-weight: 700;
+    color: var(--light-gold);
+    font-size: 23px;
+    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 
