@@ -200,15 +200,17 @@ const menuItems = [
 ];
 const categories = [
   "All",
-  "Breakfast",
+  "Appetisers",
   "Starters",
   "Main Course",
-  "Seafood",
+  "Vegetables Dishes",
   "Chicken",
-  "Beef",
-  "Rice & Biryani",
-  "Drinks",
-  "Desserts",
+  "Lamb",
+  "Hyderabadi Biryani",
+  "Rice",
+  "Clay Oven Breads",
+  "Children's Item",
+  "Drinks"
 ];
 let activeCategory = "All",
   query = "",
