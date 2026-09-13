@@ -90,15 +90,15 @@ const menuItems = [
   },
   {
     id: 8,
-    name: "Crispy Fish Fry",
+    name: "Veg Samosa",
     category: "Starters",
-    price: 9.8,
-    desc: "Spiced river fish, fried crisp with kasundi.",
+    price: 4.50,
+    desc: "Minced and Peas with herbs and spices in a deep fried.",
     image:
-      "https://images.unsplash.com/photo-1544982503-9f984c14501a?auto=format&fit=crop&w=700&q=80",
+      "Images/Veg-Samosa.jpg",
     badge: "Popular",
     spicy: true,
-    veg: false,
+    veg: true,
   },
   {
     id: 9,
