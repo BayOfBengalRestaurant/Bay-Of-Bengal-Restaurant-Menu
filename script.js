@@ -197,6 +197,18 @@ const menuItems = [
     spicy: false,
     veg: true,
   },
+  {
+    id: 17,
+    name: "Plain Padadum",
+    category: "Appetisers",
+    price: 1.00,
+    desc: "",
+    image:"Images/Plain Padadum.png",
+    badge: "",
+    spicy: false,
+    veg: false,
+    glutenFree: true,
+  },
 ];
 const categories = [
   "All",
