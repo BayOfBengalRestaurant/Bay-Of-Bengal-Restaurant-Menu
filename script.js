@@ -6,7 +6,7 @@ const menuItems = [
     category: "Beef",
     price: 12.9,
     desc: "Lamb cooked with onions, green peppers garlic and ginger, fresh tomatoes. Patato chopped with indian gerbs & spices in a olive oil & soy sauce slightly spicy",
-    image: "Images/Lamb Sizzling.jpeg",
+    image: "Images/Lamb Sizzling.png",
     badge: "Best Seller",
     spicy: true,
     veg: false,
@@ -269,7 +269,18 @@ const menuItems = [
     veg: false,
     glutenFree: false,
   },
- 
+ { 
+    id: 23,
+    name: "Onion Bhaji",
+    category: "Starters",
+    price: 4.50,
+    desc: "Sliced Onion Mix with herbs, Spices and gram flour deep fried.",
+    image:"Images/Onion-Bhaji.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
+    glutenFree: false,
+  },
   
 ];
 const categories = [
