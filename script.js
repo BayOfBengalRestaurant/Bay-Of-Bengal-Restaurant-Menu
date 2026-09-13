@@ -83,8 +83,7 @@ const menuItems = [
     category: "Starters",
     price: 4.5,
     desc: "Minced and Peas with herbs and spices in a deep fried.",
-    image:
-      "Meat-Samosa.jpg",
+    image:"Images/Meat-Samosa.jpg",
     badge: "",
     spicy: true,
     veg: false,
