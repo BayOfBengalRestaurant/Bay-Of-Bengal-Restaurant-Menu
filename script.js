@@ -79,15 +79,15 @@ const menuItems = [
   },
   {
     id: 7,
-    name: "Lentil Soup",
+    name: "Meat Samosa",
     category: "Starters",
-    price: 6.5,
-    desc: "Slow-cooked yellow lentils, garlic and lime.",
+    price: 4.5,
+    desc: "Minced and Peas with herbs and spices in a deep fried.",
     image:
-      "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=700&q=80",
-    badge: "New",
-    spicy: false,
-    veg: true,
+      "Meat-Samosa.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
   },
   {
     id: 8,
