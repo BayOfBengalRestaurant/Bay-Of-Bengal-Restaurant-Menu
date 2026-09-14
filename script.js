@@ -94,8 +94,7 @@ const menuItems = [
     category: "Starters",
     price: 4.50,
     desc: "Minced and Peas with herbs and spices in a deep fried.",
-    image:
-      "Images/Veg-Samosa.jpg",
+    image:"Images/Veg-Samosa.jpg",
     badge: "Popular",
     spicy: true,
     veg: true,
@@ -280,7 +279,57 @@ const menuItems = [
     veg: false,
     glutenFree: false,
   },
-  
+   { 
+    id: 24,
+    name: "Chicken Samosa",
+    category: "Starters",
+    price: 4.50,
+    desc: "Minced and Peas with herbs and spices in a deep fried.",
+    image:"Images/Chicken-Samosa.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
+    glutenFree: false,
+  },
+  { 
+    id: 25,
+    name: "Chicken Pakora",
+    category: "Starters",
+    price: 4.95,
+    desc: "Tender chicken pieces in butter deep fried.",
+    image:"Images/Chicken-Pakora.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
+    glutenFree: false,
+  },
+  { 
+    id: 26,
+    name: "Alo Chana Chat",
+    category: "Starters",
+    price: 5.95,
+    desc: "With onions peppers tamarind sauce and ginger.",
+    image:"Images/Alo-Chana-Chat.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
+    glutenFree: false,
+  },
+  { 
+    id: 27,
+    name: "Delhi Chicken Chat",
+    category: "Starters",
+    price: 6.50,
+    desc: "Chooped Chicken with onions, peppers, tamarinds sauce on fried bread.",
+    image:"Images/Alo-Chana-Chat.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
+    glutenFree: false,
+  },
+
+
+
 ];
 const categories = [
   "All",
