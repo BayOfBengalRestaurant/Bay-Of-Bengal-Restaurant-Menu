@@ -519,6 +519,115 @@ const menuItems = [
     spicy: true,
     veg: false,
   },
+{
+    id: 42,
+    name: "Sag Paneer",
+    category: "Vegetables Dishes",
+    price: 7.95,
+    desc: "Fresh spinach with cottage cheese in a creany sauce.",
+    image:
+      "Images/Sag-Paneer.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 43,
+    name: "Sag Bhaji",
+    category: "Vegetables Dishes",
+    price: 6.95,
+    desc: "Lightly spiced fresh spanich with garlic.",
+    image:
+      "Images/Sag-Bhaji.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 44,
+    name: "Sag Alo",
+    category: "Vegetables Dishes",
+    price: 6.95,
+    desc: "Fresh spinach with spiced potatoes.",
+    image:
+      "Images/Sag-Alo.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 45,
+    name: "Bombay Aloo",
+    category: "Vegetables Dishes",
+    price: 6.95,
+    desc: "Medium spiced potatoes.",
+    image:
+      "Images/Bombay-Alo.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 46,
+    name: "Chana Masala",
+    category: "Vegetables Dishes",
+    price: 6.95,
+    desc: "Chickpea cooked with spices.",
+    image:
+      "Images/Bombay-Alo.jpg",
+    badge: "",
+    spicy: true,
+    veg: true,
+  },
+{
+    id: 47,
+    name: "Gobi/Cauliflower Bhaji",
+    category: "Vegetables Dishes",
+    price: 6.95,
+    desc: "Sliced potatoes cooked with cauliflower/Alo Gobi",
+    image:
+      "Images/Cauliflower-Bhaji.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 48,
+    name: "Paneer Karai",
+    category: "Vegetables Dishes",
+    price: 7.95,
+    desc: "Cottage cheese cooked with spinach , herbs & spice in a dey sauca",
+    image:
+      "Images/Paneer-Karai.jpg",
+    badge: "",
+    spicy: true,
+    veg: true,
+  },
+{
+    id: 49,
+    name: "Tarka Daal",
+    category: "Vegetables Dishes",
+    price: 6.95,
+    desc: "Lentils Wit fried garlic.",
+    image:
+      "Images/Tarka-Daal.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 50,
+    name: "Mushroom Bhaji",
+    category: "Vegetables Dishes",
+    price: 6.95,
+    desc: "Mushroom in a dry curry sauce.",
+    image:
+      "Images/Tarka-Daal.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+
 
 ];
 const categories = [
