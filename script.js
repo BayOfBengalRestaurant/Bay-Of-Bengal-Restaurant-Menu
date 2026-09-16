@@ -375,6 +375,17 @@ const menuItems = [
     veg: false,
     glutenFree: false,
   },
+ id: 32,
+    name: "Assorted Platter- 2 Persons",
+    category: "Starters",
+    price: 11.95,
+    desc: "A Slecton of Meet Samosa, Onion, Bhaji, Chicken Pakora and Chicken Tikka.",
+    image:"Images/Assorted-Platter.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
+    glutenFree: false,
+  },
 
 ];
 const categories = [
