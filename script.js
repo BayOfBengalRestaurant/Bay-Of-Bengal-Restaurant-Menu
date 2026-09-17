@@ -684,7 +684,7 @@ const menuItems = [
     image:
       "Images/Dry-Vegetables-Paneer.jpg",
     badge: "",
-    spicy: false,
+    spicy: true,
     veg: true,
   },
 {
@@ -711,6 +711,66 @@ const menuItems = [
     spicy: false,
     veg: true,
   },
+{
+    id: 58,
+    name: "Dry Vegetables Paneer",
+    category: "Vegetables Dishes",
+    price: 7.50,
+    desc: "Spicy veg cooked with cottage cheese",
+    image:
+      "Images/Dry-Vegetables-Paneer.jpg",
+    badge: "",
+    spicy: true,
+    veg: true,
+  },
+{
+    id: 59,
+    name: "Chicken Biryani",
+    category: "Hyderabadi Biryani",
+    price: 11.95,
+    desc: " ",
+    image:
+      "Images/Chicken-Biryani.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
+  },
+{
+    id: 60,
+    name: "Lamb Biryani",
+    category: "Hyderabadi Biryani",
+    price: 13.95,
+    desc: " ",
+    image:
+      "Images/Lamb-Biryani.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
+  },
+  {
+    id: 61,
+    name: "Beef Biryani",
+    category: "Hyderabadi Biryani",
+    price: 12.90,
+    desc: " ",
+    image:
+      "Images/Beef-Biryani.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
+  },
+{
+    id: 62,
+    name: "Bay of Bengal Special Mixed Biryani",
+    category: "Hyderabadi Biryani",
+    price: 15.95,
+    desc: " ",
+    image:
+      "Images/BOFB-Biryani.jpg",
+    badge: "",
+    spicy: true,
+    veg: false,
+  },
 
 ];
 const categories = [
@@ -719,9 +779,8 @@ const categories = [
   "Starters",
   "Tandoori Specialities",
   "Vegetables Dishes",
-  "Chicken",
-  "Lamb",
   "Hyderabadi Biryani",
+  "Lamb",
   "Rice",
   "Clay Oven Breads",
   "Children's Item",
