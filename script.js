@@ -627,7 +627,90 @@ const menuItems = [
     spicy: false,
     veg: true,
   },
-
+{
+    id: 51,
+    name: "Dry Vegetables",
+    category: "Vegetables Dishes",
+    price: 6.95,
+    desc: "",
+    image:
+      "Images/Dry-Vegetables.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 52,
+    name: "Bhindi Bhaji",
+    category: "Vegetables Dishes",
+    price: 8.95,
+    desc: "",
+    image:
+      "Images/Bhindi-Bhaji.jpg",
+    badge: "",
+    spicy: true,
+    veg: true,
+  },
+{
+    id: 53,
+    name: "Brinjal Bhaji",
+    category: "Vegetables Dishes",
+    price: 7.95,
+    desc: "",
+    image:
+      "Images/Brinjal-Bhaji.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 54,
+    name: "Mattar Paneer",
+    category: "Vegetables Dishes",
+    price: 7.50,
+    desc: "Green Peas and Cottage Cheese in acurry veg sauce.",
+    image:
+      "Images/Mattar-Paneer.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 55,
+    name: "Dry Vegetables Paneer",
+    category: "Vegetables Dishes",
+    price: 7.50,
+    desc: "Spicy veg cooked with cottage cheese",
+    image:
+      "Images/Dry-Vegetables-Paneer.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 56,
+    name: "Paneer Tikka Masala",
+    category: "Vegetables Dishes",
+    price: 7.50,
+    desc: "",
+    image:
+      "Images/Dry-Vegetables.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
+{
+    id: 57,
+    name: "Shahi Paneer",
+    category: "Vegetables Dishes",
+    price: 7.50,
+    desc: "",
+    image:
+      "Images/Dry-Vegetables.jpg",
+    badge: "",
+    spicy: false,
+    veg: true,
+  },
 
 ];
 const categories = [
