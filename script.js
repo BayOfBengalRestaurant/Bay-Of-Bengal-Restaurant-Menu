@@ -3,8 +3,8 @@ const menuItems = [
   {
     id: 1,
     name: "Lamb Sizzling",
-    category: "Beef",
-    price: 12.9,
+    category: "Chef Specialities",
+    price: 12.90,
     desc: "Lamb cooked with onions, green peppers garlic and ginger, fresh tomatoes. Patato chopped with indian gerbs & spices in a olive oil & soy sauce slightly spicy",
     image: "Images/Lamb Sizzling.png",
     badge: "Best Seller",
@@ -15,42 +15,45 @@ const menuItems = [
   },
   {
     id: 2,
-    name: "Bengal Prawn Curry",
-    category: "Seafood",
-    price: 16.5,
-    desc: "Tiger prawns in a fragrant coconut mustard curry.",
+    name: "Garlic Chilli Chicken",
+    category: "Chef Specialities",
+    price: 9.95,
+    desc: "Barbequed Chicken cooked with chopped garlic capsicums onions and fresh green chilli in medium/hot curry sauce.",
     image:
-      "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=700&q=80",
+      "Imaages/Garlic-Chilli-Chicken.jpg",
     badge: "Popular",
     spicy: true,
     veg: false,
     featured: true,
+    glutenFree: true,
   },
   {
     id: 3,
-    name: "Smoky Chicken Kebab",
-    category: "Chicken",
-    price: 12.9,
+    name: "Tamil Black Papper Curry - Chicken",
+    category: "Chef Specialities",
+    price: 9.95,
     desc: "Charcoal-kissed chicken, mint yogurt and salad.",
     image:
-      "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=700&q=80",
+      "Images/Tamil Curry.jpg",
     badge: "Popular",
     spicy: true,
     veg: false,
     featured: true,
+    glutenFree: true,
   },
   {
     id: 4,
-    name: "Royal Kacchi Biryani",
-    category: "Rice & Biryani",
-    price: 15.9,
-    desc: "Aromatic basmati, tender lamb and golden potato.",
+    name: "Naga-Chicken",
+    category: "Chef Specialities",
+    price: 9.95,
+    desc: "The Flavour of Bengal's Naga Chillies (Hot & Spicy).",
     image:
-      "https://images.unsplash.com/photo-1701579231305-d84d8af9a3b3?auto=format&fit=crop&w=700&q=80",
+      "Images/Naga-Chicken.jpg",
     badge: "Best Seller",
-    spicy: false,
+    spicy: true,
     veg: false,
     featured: true,
+    glutenFree: true,
   },
   {
     id: 5,
@@ -59,11 +62,11 @@ const menuItems = [
     price: 5.5,
     desc: "Creamy chilled yogurt with ripe mango.",
     image:
-      "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=700&q=80",
-    badge: "New",
+      "Images/Mango-Lassi",
+    badge: "Soft Drinks",
     spicy: false,
     veg: true,
-    featured: true,
+    featured: false,
   },
   {
     id: 6,
@@ -400,7 +403,7 @@ const menuItems = [
     veg: false,
   },
    {
-    id: 33,
+    id: 34,
     name: "Chicken Tikka Shahslik",
     category: "Tandoori Specialities",
     price: 10.95,
@@ -412,7 +415,7 @@ const menuItems = [
     veg: false,
   },
    {
-    id: 34,
+    id: 35,
     name: "Chicken and Cheese Tikka",
     category: "Tandoori Specialities",
     price: 8.95,
@@ -424,7 +427,7 @@ const menuItems = [
     veg: false,
   },
    {
-    id: 35,
+    id: 36,
     name: "Chicken Mind Kebab",
     category: "Tandoori Specialities",
     price: 9.95,
@@ -436,7 +439,7 @@ const menuItems = [
     veg: false,
   },
   {
-    id: 36,
+    id: 37,
     name: "Chicken Tikka Salad",
     category: "Tandoori Specialities",
     price: 7.95,
@@ -448,7 +451,7 @@ const menuItems = [
     veg: false,
   },
   {
-    id: 37,
+    id: 38,
     name: "Tandoori Salamon",
     category: "Tandoori Specialities",
     price: 17.95,
@@ -460,7 +463,7 @@ const menuItems = [
     veg: false,
   },
  {
-    id: 38,
+    id: 39,
     name: "Bay of Bengal Mixed Tandoori",
     category: "Tandoori Specialities",
     price: 19.95,
@@ -472,7 +475,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 39,
+    id: 40,
     name: "King Prawn Tandoori",
     category: "Tandoori Specialities",
     price: 19.95,
@@ -484,7 +487,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 40,
+    id: 41,
     name: "Seekh Kebab",
     category: "Tandoori Specialities",
     price: 8.95,
@@ -496,7 +499,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 41,
+    id: 42,
     name: "Sami Kebab",
     category: "Tandoori Specialities",
     price: 8.95,
@@ -508,7 +511,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 41,
+    id: 43,
     name: "Mixed Kebab",
     category: "Tandoori Specialities",
     price: 11.95,
@@ -520,7 +523,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 42,
+    id: 44,
     name: "Sag Paneer",
     category: "Vegetables Dishes",
     price: 7.95,
@@ -532,7 +535,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 43,
+    id: 45,
     name: "Sag Bhaji",
     category: "Vegetables Dishes",
     price: 6.95,
@@ -544,7 +547,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 44,
+    id: 46,
     name: "Sag Alo",
     category: "Vegetables Dishes",
     price: 6.95,
@@ -556,7 +559,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 45,
+    id: 47,
     name: "Bombay Aloo",
     category: "Vegetables Dishes",
     price: 6.95,
@@ -568,7 +571,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 46,
+    id: 48,
     name: "Chana Masala",
     category: "Vegetables Dishes",
     price: 6.95,
@@ -580,7 +583,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 47,
+    id: 49,
     name: "Gobi/Cauliflower Bhaji",
     category: "Vegetables Dishes",
     price: 6.95,
@@ -592,7 +595,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 48,
+    id: 50,
     name: "Paneer Karai",
     category: "Vegetables Dishes",
     price: 7.95,
@@ -604,7 +607,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 49,
+    id: 51,
     name: "Tarka Daal",
     category: "Vegetables Dishes",
     price: 6.95,
@@ -616,7 +619,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 50,
+    id: 52,
     name: "Mushroom Bhaji",
     category: "Vegetables Dishes",
     price: 6.95,
@@ -628,7 +631,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 51,
+    id: 53,
     name: "Dry Vegetables",
     category: "Vegetables Dishes",
     price: 6.95,
@@ -640,7 +643,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 52,
+    id: 54,
     name: "Bhindi Bhaji",
     category: "Vegetables Dishes",
     price: 8.95,
@@ -652,7 +655,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 53,
+    id: 55,
     name: "Brinjal Bhaji",
     category: "Vegetables Dishes",
     price: 7.95,
@@ -664,7 +667,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 54,
+    id: 56,
     name: "Mattar Paneer",
     category: "Vegetables Dishes",
     price: 7.50,
@@ -676,7 +679,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 55,
+    id: 57,
     name: "Dry Vegetables Paneer",
     category: "Vegetables Dishes",
     price: 7.50,
@@ -688,7 +691,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 56,
+    id: 58,
     name: "Paneer Tikka Masala",
     category: "Vegetables Dishes",
     price: 7.50,
@@ -700,7 +703,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 57,
+    id: 59,
     name: "Shahi Paneer",
     category: "Vegetables Dishes",
     price: 7.50,
@@ -712,7 +715,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 58,
+    id: 60,
     name: "Dry Vegetables Paneer",
     category: "Vegetables Dishes",
     price: 7.50,
@@ -724,7 +727,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 59,
+    id: 61,
     name: "Chicken Biryani",
     category: "Hyderabadi Biryani",
     price: 11.95,
@@ -736,7 +739,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 60,
+    id: 62,
     name: "Lamb Biryani",
     category: "Hyderabadi Biryani",
     price: 13.95,
@@ -748,7 +751,7 @@ const menuItems = [
     veg: false,
   },
   {
-    id: 61,
+    id: 63,
     name: "Beef Biryani",
     category: "Hyderabadi Biryani",
     price: 12.90,
@@ -760,7 +763,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 62,
+    id: 64,
     name: "Bay of Bengal Special Mixed Biryani",
     category: "Hyderabadi Biryani",
     price: 15.95,
@@ -772,7 +775,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 63,
+    id: 65,
     name: "Boiled Rice",
     category: "Rice",
     price: 2.50,
@@ -784,7 +787,7 @@ const menuItems = [
     veg: false,
   },
   {
-    id: 64,
+    id: 66,
     name: "Polao Rice",
     category: "Rice",
     price: 3.00,
@@ -796,7 +799,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 65,
+    id: 67,
     name: "Mushroom Rice",
     category: "Rice",
     price: 3.90,
@@ -808,7 +811,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 66,
+    id: 68,
     name: "Vegetables Rice",
     category: "Rice",
     price: 3.90,
@@ -820,7 +823,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 67,
+    id: 69,
     name: "Coconut Rice",
     category: "Rice",
     price: 4.50,
@@ -832,7 +835,7 @@ const menuItems = [
     veg: false,
   },
   {
-    id: 68,
+    id: 70,
     name: "Keema Rice",
     category: "Rice",
     price: 4.50,
@@ -844,7 +847,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 69,
+    id: 71,
     name: "Special Rice",
     category: "Rice",
     price: 4.50,
@@ -856,7 +859,7 @@ const menuItems = [
     veg: true,
   },
 {
-    id: 70,
+    id: 72,
     name: "Egg Rice",
     category: "Rice",
     price: 4.50,
@@ -868,7 +871,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 71,
+    id: 73,
     name: "Plain Naan",
     category: "Clay Oven Breads",
     price: 2.50,
@@ -880,7 +883,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 72,
+    id: 74,
     name: "Garlic Naan",
     category: "Clay Oven Breads",
     price: 2.95,
@@ -892,7 +895,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 73,
+    id: 75,
     name: "Butter Naan",
     category: "Clay Oven Breads",
     price: 3.25,
@@ -904,7 +907,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 74,
+    id: 76,
     name: "Keema Naan",
     category: "Clay Oven Breads",
     price: 3.90,
@@ -916,7 +919,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 75,
+    id: 77,
     name: "Peshwari Naan",
     category: "Clay Oven Breads",
     price: 3.90,
@@ -927,7 +930,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 76,
+    id: 78,
     name: "Cheese  Naan",
     category: "Clay Oven Breads",
     price: 3.50,
@@ -938,7 +941,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 77,
+    id: 79,
     name: "Cheese & Garlic Naan",
     category: "Clay Oven Breads",
     price: 3.95,
@@ -949,7 +952,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 78,
+    id: 80,
     name: "Paratha Bread",
     category: "Clay Oven Breads",
     price: 2.95,
@@ -960,7 +963,7 @@ const menuItems = [
     veg: false,
   },
 {
-    id: 79,
+    id: 81,
     name: "Podina Bread",
     category: "Clay Oven Breads",
     price: 3.50,
@@ -971,7 +974,7 @@ const menuItems = [
     veg: false,
   },
   {
-    id: 80,
+    id: 82,
     name: "Alo Paratha",
     category: "Clay Oven Breads",
     price: 3.50,
@@ -982,7 +985,7 @@ const menuItems = [
     veg: false,
   },
    {
-    id: 81,
+    id: 83,
     name: "Chapati",
     category: "Clay Oven Breads",
     price: 1.95,
@@ -993,7 +996,7 @@ const menuItems = [
     veg: false,
   },
   {
-    id: 82,
+    id: 84,
     name: "Tandoori Roti",
     category: "Clay Oven Breads",
     price: 2.25,
@@ -1004,7 +1007,7 @@ const menuItems = [
     veg: false,
   },
   {
-    id: 83,
+    id: 85,
     name: "Onion Kulcha",
     category: "Clay Oven Breads",
     price: 3.95,
@@ -1015,7 +1018,7 @@ const menuItems = [
     veg: false,
   },
    {
-    id: 84,
+    id: 86,
     name: "Mixed Raitas",
     category: "Clay Oven Breads",
     price: 2.95,
@@ -1026,7 +1029,7 @@ const menuItems = [
     veg: false,
   },
   {
-    id: 85,
+    id: 87,
     name: "Chips",
     category: "Children's Item",
     price: 2.75,
@@ -1037,7 +1040,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 86,
+    id: 88,
     name: "Fish Finger & Chips",
     category: "Children's Item",
     price: 5.90,
@@ -1048,7 +1051,7 @@ const menuItems = [
     veg: false,
   },
 { 
-    id: 87,
+    id: 89,
     name: "Chicken Tikka & Chips",
     category: "Children's Item",
     price: 5.90,
@@ -1059,7 +1062,7 @@ const menuItems = [
     veg: false,
   },
 { 
-    id: 88,
+    id: 90,
     name: "Chicken Nuggets & Chips",
     category: "Children's Item",
     price: 5.90,
@@ -1070,7 +1073,7 @@ const menuItems = [
     veg: false,
   },
 { 
-    id: 89,
+    id: 91,
     name: "Chicken Omelete & Chips",
     category: "Children's Item",
     price: 6.50,
@@ -1081,7 +1084,7 @@ const menuItems = [
     veg: false,
   },
 { 
-    id: 90,
+    id: 92,
     name: "Nan Wrap With Chicken Tikka",
     category: "Children's Item",
     price: 6.50,
@@ -1092,7 +1095,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 91,
+    id: 93,
     name: "Water/Agua",
     category: "Drinks",
     price: 1.95,
@@ -1103,7 +1106,7 @@ const menuItems = [
     veg: false,
   },
    { 
-    id: 91,
+    id: 94,
     name: "Water/Agua",
     category: "Drinks",
     price: 1.95,
@@ -1114,7 +1117,7 @@ const menuItems = [
     veg: false,
   },
      { 
-    id: 92,
+    id: 95,
     name: "Sparkling Water/Con Gas",
     category: "Drinks",
     price: 1.95,
@@ -1125,7 +1128,7 @@ const menuItems = [
     veg: false,
   },
      { 
-    id: 93,
+    id: 96,
     name: "Coca-Cola/Zero",
     category: "Drinks",
     price: 2.95,
@@ -1136,7 +1139,7 @@ const menuItems = [
     veg: false,
   },
      { 
-    id: 94,
+    id: 97,
     name: "Fanta Orange/Lemon",
     category: "Drinks",
     price: 2.95,
@@ -1147,7 +1150,7 @@ const menuItems = [
     veg: false,
   },
      { 
-    id: 95,
+    id: 98,
     name: "Sprite",
     category: "Drinks",
     price: 2.95,
@@ -1158,7 +1161,7 @@ const menuItems = [
     veg: false,
   },
    { 
-    id: 96,
+    id: 99,
     name: "Aquarius Can",
     category: "Drinks",
     price: 2.95,
@@ -1169,7 +1172,7 @@ const menuItems = [
     veg: false,
   },
    { 
-    id: 97,
+    id: 100,
     name: "Nestea Can",
     category: "Drinks",
     price: 2.95,
@@ -1180,7 +1183,7 @@ const menuItems = [
     veg: false,
   },
      { 
-    id: 98,
+    id: 101,
     name: "Fresh Orange Juice",
     category: "Drinks",
     price: 3.95,
@@ -1191,7 +1194,7 @@ const menuItems = [
     veg: false,
   },
     { 
-    id: 99,
+    id: 102,
     name: "Apple Juice ",
     category: "Drinks",
     price: 2.95,
@@ -1202,7 +1205,7 @@ const menuItems = [
     veg: false,
   },
     { 
-    id: 100,
+    id: 103,
     name: "Pineapple Juice ",
     category: "Drinks",
     price: 2.95,
@@ -1213,7 +1216,7 @@ const menuItems = [
     veg: false,
   },
     { 
-    id: 101,
+    id: 104,
     name: "Mango Lassi ",
     category: "Drinks",
     price: 4.50,
@@ -1224,7 +1227,7 @@ const menuItems = [
     veg: false,
   },
     { 
-    id: 102,
+    id: 105,
     name: "Avacado Lassi",
     category: "Drinks",
     price: 5.50,
@@ -1235,7 +1238,7 @@ const menuItems = [
     veg: false,
   },
     { 
-    id: 103,
+    id: 106,
     name: "Kopperbarg",
     category: "Drinks",
     price: 4.50,
@@ -1246,7 +1249,7 @@ const menuItems = [
     veg: false,
   },
    { 
-    id: 104,
+    id: 107,
     name: "Stronghow",
     category: "Drinks",
     price: 4.50,
@@ -1257,7 +1260,7 @@ const menuItems = [
     veg: false,
   },
    { 
-    id: 105,
+    id: 108,
     name: "Magners",
     category: "Drinks",
     price: 5.95,
@@ -1268,7 +1271,7 @@ const menuItems = [
     veg: false,
   },
    { 
-    id: 106,
+    id: 109,
     name: "Sangria (Jug)",
     category: "Drinks",
     price: 9.95,
@@ -1279,7 +1282,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 107,
+    id: 110,
     name: "Tinto Verano Glass",
     category: "Drinks",
     price: 4.50,
@@ -1290,7 +1293,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 108,
+    id: 111,
     name: "Margues De Caceres",
     category: "Drinks",
     price: 19.90,
@@ -1301,7 +1304,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 109,
+    id: 112,
     name: "Margues De Riscal",
     category: "Drinks",
     price: 29.90,
@@ -1312,7 +1315,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 110,
+    id: 113,
     name: "Albali Reserva",
     category: "Drinks",
     price: 19.90,
@@ -1323,7 +1326,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 111,
+    id: 114,
     name: "Emilo Mora",
     category: "Drinks",
     price: 39.90,
@@ -1334,7 +1337,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 112,
+    id: 115,
     name: "Protos Reserva",
     category: "Drinks",
     price: 34.90,
@@ -1345,7 +1348,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 112,
+    id: 116,
     name: "Protos Roble",
     category: "Drinks",
     price: 24.95,
@@ -1356,7 +1359,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 113,
+    id: 117,
     name: "Ramon Bilbao Crianza",
     category: "Drinks",
     price: 19.95,
@@ -1367,7 +1370,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 114,
+    id: 118,
     name: "Celeste",
     category: "Drinks",
     price: 25.95,
@@ -1378,7 +1381,7 @@ const menuItems = [
     veg: false,
   },
     { 
-    id: 115,
+    id: 119,
     name: "Draught 1/2",
     category: "Drinks",
     price: 2.95,
@@ -1389,7 +1392,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 116,
+    id: 120,
     name: "Draught Pint",
     category: "Drinks",
     price: 3.95,
@@ -1400,7 +1403,7 @@ const menuItems = [
     veg: false,
   },
    { 
-    id: 117,
+    id: 121,
     name: "Cobra-Indian Beer(350ml)",
     category: "Drinks",
     price: 3.95,
@@ -1411,7 +1414,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 118,
+    id: 122,
     name: "Cobra-Indian Beer(500ml)",
     category: "Drinks",
     price: 3.95,
@@ -1422,7 +1425,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 119,
+    id: 123,
     name: "Heineken",
     category: "Drinks",
     price: 3.50,
@@ -1433,7 +1436,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 119,
+    id: 124,
     name: "Corona",
     category: "Drinks",
     price: 3.95,
@@ -1444,7 +1447,7 @@ const menuItems = [
     veg: false,
   },
   { 
-    id: 120,
+    id: 125,
     name: "No Alcohol Beer",
     category: "Drinks",
     price: 3.00,
@@ -1455,7 +1458,7 @@ const menuItems = [
     veg: false,
   },
    { 
-    id: 121,
+    id: 126,
     name: "Gluten free Beer",
     category: "Drinks",
     price: 3.00,
@@ -1467,7 +1470,7 @@ const menuItems = [
     glutenFree: true,
   },
   { 
-    id: 122,
+    id: 127,
     name: "House Wine",
     category: "Drinks",
     price: 12.95,
@@ -1479,7 +1482,7 @@ const menuItems = [
     glutenFree: false,
   },
    { 
-    id: 123,
+    id: 128,
     name: "Marques De Carceres",
     category: "Drinks",
     price: 19.90,
@@ -1491,7 +1494,7 @@ const menuItems = [
     glutenFree: false,
   },
    { 
-    id: 124,
+    id: 129,
     name: "Marques De Riscal",
     category: "Drinks",
     price: 25.90,
@@ -1503,7 +1506,7 @@ const menuItems = [
     glutenFree: false,
   },
 { 
-    id: 125,
+    id: 130,
     name: "Vina Sol",
     category: "Drinks",
     price: 16.90,
@@ -1515,7 +1518,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 126,
+    id: 131,
     name: "Most Wanted",
     category: "Drinks",
     price: 19.95,
@@ -1527,7 +1530,7 @@ const menuItems = [
     glutenFree: false,
   },
  { 
-    id: 127,
+    id: 132,
     name: "Ogio Pinot Grigo",
     category: "Drinks",
     price: 19.90,
@@ -1539,7 +1542,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 128,
+    id: 133,
     name: "Protos(Sauvigno Blanco)",
     category: "Drinks",
     price: 19.90,
@@ -1551,7 +1554,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 129,
+    id: 134,
     name: "La Vieille Ferme",
     category: "Drinks",
     price: 19.90,
@@ -1563,7 +1566,7 @@ const menuItems = [
     glutenFree: false,
   },
    { 
-    id: 130,
+    id: 135,
     name: "Martin Codax",
     category: "Drinks",
     price: 29.90,
@@ -1575,7 +1578,7 @@ const menuItems = [
     glutenFree: false,
   },
    { 
-    id: 131,
+    id: 136,
     name: "House Rose",
     category: "Drinks",
     price: 11.50,
@@ -1587,7 +1590,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 132,
+    id: 137,
     name: "Marques De Caceres",
     category: "Drinks",
     price: 19.90,
@@ -1599,7 +1602,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 133,
+    id: 138,
     name: "Marques De Riscal",
     category: "Drinks",
     price: 29.90,
@@ -1611,7 +1614,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 134,
+    id: 139,
     name: "Mateus",
     category: "Drinks",
     price: 16.90,
@@ -1623,7 +1626,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 135,
+    id: 140,
     name: "La Vieille Ferme",
     category: "Drinks",
     price: 19.90,
@@ -1635,7 +1638,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 136,
+    id: 141,
     name: "Ohla Torres",
     category: "Drinks",
     price: 16.90,
@@ -1647,7 +1650,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 137,
+    id: 142,
     name: "Ogio Rose Blush",
     category: "Drinks",
     price: 16.90,
@@ -1659,7 +1662,7 @@ const menuItems = [
     glutenFree: false,
   },
    { 
-    id: 138,
+    id: 143,
     name: "Freixenet",
     category: "Drinks",
     price: 17.90,
@@ -1671,7 +1674,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 139,
+    id: 144,
     name: "Freixenet(Small)",
     category: "Drinks",
     price: 5.90,
@@ -1683,7 +1686,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 140,
+    id: 145,
     name: "Brut",
     category: "Drinks",
     price: 24.90,
@@ -1695,7 +1698,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 141,
+    id: 146,
     name: "Anna",
     category: "Drinks",
     price: 24.90,
@@ -1707,7 +1710,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 142,
+    id: 147,
     name: "Moet Chaandon",
     category: "Drinks",
     price: 69.90,
@@ -1719,7 +1722,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 143,
+    id: 148,
     name: "GIN",
     category: "Drinks",
     price: 4.00,
@@ -1731,7 +1734,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 144,
+    id: 149,
     name: "GIN Special",
     category: "Drinks",
     price: 5.00,
@@ -1743,7 +1746,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 145,
+    id: 150,
     name: "VODKA",
     category: "Drinks",
     price: 4.00,
@@ -1755,7 +1758,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 146,
+    id: 151,
     name: "VODKA Special",
     category: "Drinks",
     price: 5.00,
@@ -1767,7 +1770,7 @@ const menuItems = [
     glutenFree: false,
   },
   { 
-    id: 147,
+    id: 152,
     name: "WHISKY",
     category: "Drinks",
     price: 4.00,
@@ -1779,7 +1782,7 @@ const menuItems = [
     glutenFree: false,
   },
    { 
-    id: 147,
+    id: 153,
     name: "WHISKY Special",
     category: "Drinks",
     price: 5.50,
@@ -1791,7 +1794,7 @@ const menuItems = [
     glutenFree: false,
   },
    { 
-    id: 148,
+    id: 154,
     name: "LICOR",
     category: "Drinks",
     price: 4.00,
@@ -1803,7 +1806,7 @@ const menuItems = [
     glutenFree: false,
   },
    { 
-    id: 147,
+    id: 155,
     name: "LICOR Special",
     category: "Drinks",
     price: 4.50,
@@ -1814,11 +1817,136 @@ const menuItems = [
     veg: false,
     glutenFree: false,
   },
+  {
+    id: 156,
+    name: "Garlic Chilli Beef",
+    category: "Chef Specialities",
+    price: 10.95,
+    desc: "Barbequed Beef cooked with chopped garlic capsicums onions and fresh green chilli in medium/hot curry sauce.",
+    image:
+      "Imaages/Garlic-Chilli-Beef.jpg",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+    featured: true,
+    glutenFree: true,
+  },
+  {
+    id: 157,
+    name: "Chicken Sizzling",
+    category: "Chef Specialities",
+    price: 9.95,
+    desc: "Chicken cooked with onions, green peppers garlic and ginger, fresh tomatoes. Patato chopped with indian gerbs & spices in a olive oil & soy sauce slightly spicy",
+    image: "Images/Chicken Sizzling.png",
+    badge: "Best Seller",
+    spicy: true,
+    veg: false,
+    glutenFree: true,
+    featured: true,
+  },
+{
+    id: 158,
+    name: "Beef Sizzling",
+    category: "Chef Specialities",
+    price: 10.95,
+    desc: "Beef cooked with onions, green peppers garlic and ginger, fresh tomatoes. Patato chopped with indian gerbs & spices in a olive oil & soy sauce slightly spicy",
+    image: "Images/Beef-Sizzling.png",
+    badge: "Best Seller",
+    spicy: true,
+    veg: false,
+    glutenFree: true,
+    featured: true,
+  },
+  {
+    id: 159,
+    name: "Garlic Chilli Lamb",
+    category: "Chef Specialities",
+    price: 12.90,
+    desc: "Barbequed Lamb cooked with chopped garlic capsicums onions and fresh green chilli in medium/hot curry sauce.",
+    image:
+      "Images/Garlic-Chilli-Lamb.jpg",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+    featured: true,
+    glutenFree: true,
+  },
+  {
+    id: 160,
+    name: "Garlic Chilli Prawns",
+    category: "Chef Specialities",
+    price: 11.90,
+    desc: "Barbequed Prawns cooked with chopped garlic capsicums onions and fresh green chilli in medium/hot curry sauce.",
+    image:
+      "Images/Garlic-Chilli-Prawns.jpg",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+    featured: true,
+    glutenFree: true,
+  },
+  {
+    id: 161,
+    name: "Tamil Black Papper Curry - Beef",
+    category: "Chef Specialities",
+    price: 10.95,
+    desc: "Beef Cooked with black papper,cloves chilli & fennel.",
+    image:
+      "Images/Black-Papper-Beef.jpg",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+    featured: true,
+    glutenFree: true,
+  },
+  {
+    id: 162,
+    name: "Tamil Black Papper Curry - Lamb",
+    category: "Chef Specialities",
+    price: 12.90,
+    desc: "Lamb Cooked with black papper,cloves chilli & fennel.",
+    image:
+      "Images/Black-Papper-Lamb.jpg",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+    featured: true,
+    glutenFree: true,
+  },
+  {
+    id: 163,
+    name: "Tamil Black Papper Curry - Prawns",
+    category: "Chef Specialities",
+    price: 11.90,
+    desc: "Prawns Cooked with black papper,cloves chilli & fennel.",
+    image:
+      "Images/Black-Papper-Prawns.jpg",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+    featured: true,
+    glutenFree: true,
+  },
+  {
+    id: 164,
+    name: "Mango Chicken",
+    category: "Chef Specialities",
+    price: 9.95,
+    desc: "Marinated chicken tikka cooked in almond,coconut & Cooked with mango sauce.",
+    image:
+      "Images/Mango-Chicken.jpg",
+    badge: "Popular",
+    spicy: true,
+    veg: false,
+    featured: true,
+    glutenFree: true,
+  },
 ];
 const categories = [
   "All",
   "Appetisers",
   "Starters",
+  "Chef Specialities",
   "Tandoori Specialities",
   "Vegetables Dishes",
   "Hyderabadi Biryani",
@@ -1869,7 +1997,7 @@ function renderMenu() {
     `${filtered.length} dish${filtered.length === 1 ? "" : "es"}`;
 }
 function renderFeatured() {
-  const picks = menuItems.filter((x) => x.featured).slice(0, 5);
+  const picks = menuItems.filter((x) => x.featured);
   $("#recommendationTrack").innerHTML = picks
     .map(
       (x) =>
