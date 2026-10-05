@@ -392,7 +392,7 @@ const menuItems = [
     price: 12.95,
     desc: "Tender Chicken cooked with almonds,cream and aromatic spices.",
     image:
-      "Images/Samba-Chicken.jpg",
+      "Images/Chicken-Masala.jpg",
     badge: "",
     spicy: true,
     veg: false,
@@ -802,7 +802,7 @@ const menuItems = [
     price: 3.00,
     desc: " ",
     image:
-      "Images/Polao-Rice.webp",
+      "Images/Polao-Rice.jpg",
     badge: "",
     spicy: false,
     veg: false,
@@ -886,7 +886,7 @@ const menuItems = [
     price: 2.50,
     desc: "",
     image:
-      "Images/Plain-Bread.jpg",
+      "Images/Plain-Naan.jpg",
     badge: "",
     spicy: false,
     veg: false,
@@ -898,7 +898,7 @@ const menuItems = [
     price: 2.95,
     desc: "",
     image:
-      "Images/Garlic-Bread.jpg",
+      "Images/Garlic-Naan.jpg",
     badge: "",
     spicy: false,
     veg: false,
@@ -933,7 +933,7 @@ const menuItems = [
     category: "Clay Oven Breads",
     price: 3.90,
     desc: "",
-    image:"Images/Peshwari-Bread.jpg",
+    image:"Images/Peshwari-Naan.jpg",
     badge: "",
     spicy: false,
     veg: false,
