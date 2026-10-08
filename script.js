@@ -2240,8 +2240,8 @@ function renderCart() {
     qty: line.qty,
   }));
   const count = cart.reduce((n, x) => n + x.qty, 0),
-    sub = entries.reduce((n, { item, qty }) => n + item.price * qty, 0),
-    service = sub ? sub * 0.05 : 0;
+  sub = entries.reduce((n, { item, qty }) => n + item.price * qty, 0),
+  service = 0;
   $("#cartCount").textContent = count;
   $("#cartItems").innerHTML = entries
     .map(
