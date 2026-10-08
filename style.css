@@ -69,7 +69,7 @@ input:focus-visible {
     color: #fff;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(100deg, rgba(3, 48, 57, .88), rgba(6, 83, 94, .45)), url("https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1800&q=85") center/cover
+    background: linear-gradient(100deg, rgba(3, 48, 57, .88), rgba(6, 83, 94, .45)), url("Images/Restaurant-BG.jpg") center/cover
 }
 
 .hero:after {
