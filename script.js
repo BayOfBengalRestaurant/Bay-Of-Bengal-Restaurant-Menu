@@ -2398,3 +2398,52 @@ renderCategories();
 renderFeatured();
 renderMenu();
 renderCart();
+$("#orderButton").onclick = () => {
+  if (!cart.length) {
+    showToast("Your order is empty");
+    return;
+  }
+
+  const entries = cart
+    .map((line) => ({
+      item: menuItems.find((x) => x.id === line.id),
+      qty: line.qty,
+    }))
+    .filter(({ item }) => item);
+
+  const total = entries.reduce(
+    (sum, { item, qty }) => sum + item.price * qty,
+    0,
+  );
+
+  const lines = entries.map(
+    ({ item, qty }) =>
+      `${item.name} x ${qty} - ${format(item.price * qty)}`
+  );
+
+  const message = [
+    "🍽️ NEW ORDER",
+    "Bay Of Bengal Restaurant",
+    "",
+    ...lines,
+    "",
+    `Total: ${format(total)}`,
+    "",
+    "Please confirm my order.",
+  ].join("\n");
+
+  const whatsappNumber = "8801849798564";
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+  // Open WhatsApp
+  window.open(url, "_blank");
+
+  // Clear cart
+  cart = [];
+  localStorage.removeItem("bayOfBengalCart");
+
+  // Update cart display
+  renderCart();
+
+  showToast("Order sent to WhatsApp. Cart cleared!");
+};
