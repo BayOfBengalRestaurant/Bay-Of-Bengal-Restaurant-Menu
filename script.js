@@ -2157,7 +2157,7 @@ const menuItems = [
     price:9.50,
     desc: "Very Mild Dish cooked with coconuts, almonds & fresh cream.",
     image:
-      "Images/Chicken Korma.jpg",
+      "Images/Chicken-Korma.jpg",
     badge: "Mild",
     spicy: true,
     veg: false,
@@ -2269,7 +2269,7 @@ const menuItems = [
     price:11.95,
     desc: "A Combines of special blend of spices & Chopped onions capsicums, tomatoes and corianders cooked together in sauce of medium consistency.",
     image:
-      "Images/Chicken-Bhuna.jpg",
+      "Images/Beef-Bhuna.jpg",
     badge: "Medium",
     spicy: true,
     veg: false,
@@ -2306,16 +2306,14 @@ const menuItems = [
   },
    {
     id: 190,
-    name: "Fish Bhuna",
-    category: "Traditional Favourites",
-    price:11.90,
-    desc: "A Combines of special blend of spices & Chopped onions capsicums, tomatoes and corianders cooked together in sauce of medium consistency.",
-    image:
-      "Images/Fish-Bhuna.jpg",
-    badge: "Medium",
+    name: "Shaz-lek Bhuna Chicken",
+    category: "House Specialities",
+    price: 11.90,
+    desc: "Cooked in a traditional clay oven tandoori then cooked with bhuna sauce & chef's own spices.",
+    badge: "",
+    image:"Images/Lamb-Kadhai.jpg",
     spicy: true,
     veg: false,
-    featured: true,
     glutenFree: true,
   },
   {
@@ -3466,18 +3464,7 @@ const menuItems = [
     veg: false,
     glutenFree: true,
   },
-  { 
-    id: 285,
-    name: "Shaz-lek Bhuna Chicken",
-    category: "House Specialities",
-    price: 11.90,
-    desc: "Cooked in a traditional clay oven tandoori then cooked with bhuna sauce & chef's own spices.",
-    badge: "",
-    image:"Images/Lamb-Kadhai.jpg",
-    spicy: true,
-    veg: false,
-    glutenFree: true,
-  },
+  
 ];
 const categories = [
   "All",
