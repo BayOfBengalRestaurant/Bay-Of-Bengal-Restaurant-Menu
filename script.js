@@ -3741,7 +3741,7 @@ $("#orderButton").onclick = () => {
     "Please confirm my order.",
   ].join("\n");
 
-  const whatsappNumber = "8801849798564";
+  const whatsappNumber = "34602580083";
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   
