@@ -73,7 +73,7 @@ const menuItems = [
     name: "Tandoori Butter Chicken (Mild)",
     category: "Chef Specialities",
     price: 10.90,
-    desc: "",
+    desc: "1/2 Tandoori Chicken (off the bone) cooked with butter in a thick creamy mild sauce.",
     image:
       "Images/Tandoori-Butter-Chicken.jpg",
     badge: "Popular",
@@ -608,7 +608,7 @@ const menuItems = [
     name: "Paneer Karahi",
     category: "Vegetables Dishes",
     price: 7.95,
-    desc: "Cottage cheese cooked with spinach , herbs & spice in a dey sauca",
+    desc: "Cottage cheese cooked with spinach , herbs & spice in a dey sauce.",
     image:
       "Images/Paneer-Karahi.jpg",
     badge: "",
@@ -689,15 +689,15 @@ const menuItems = [
   },
 {
     id: 57,
-    name: "Dry Vegetables Paneer",
-    category: "Vegetables Dishes",
-    price: 7.50,
-    desc: "Spicy veg cooked with cottage cheese",
+    name: "Prawn Poori",
+    category: "Starters",
+    price: 7.90,
+    desc: "Dry Prawn curry served with fired indian bread.",
     image:
-      "Images/Dry-Vegetables-Paneer.jpg",
+      "Images/Prawn-Poori.jpg",
     badge: "",
     spicy: true,
-    veg: true,
+    veg: false,
   },
 {
     id: 58,
@@ -798,7 +798,7 @@ const menuItems = [
   },
   {
     id: 66,
-    name: "Polao Rice",
+    name: "Pilau Rice",
     category: "Rice",
     price: 3.00,
     desc: " ",
