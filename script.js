@@ -3687,13 +3687,6 @@ $("#clearCart").onclick = () => {
   renderCart();
   showToast("Cart cleared");
 };
-$("#orderButton").onclick = () => {
-  showToast("Order request received — we’ll be right with you!");
-  cart = [];
-  saveCart();
-  renderCart();
-  closeCart();
-};
 const theme = $(".theme-toggle");
 function setTheme(dark) {
   document.body.classList.toggle("dark", dark);
@@ -3751,15 +3744,18 @@ $("#orderButton").onclick = () => {
   const whatsappNumber = "8801849798564";
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
+  
   // Open WhatsApp
   window.open(url, "_blank");
 
-  // Clear cart
+  // Clear cart in memory and save the empty cart
   cart = [];
-  localStorage.removeItem("bayOfBengalCart");
+  saveCart();
 
-  // Update cart display
+  // Update the cart display
   renderCart();
+  closeCart();
 
-  showToast("Order sent to WhatsApp. Cart cleared!");
+  showToast("WhatsApp opened. Your cart is cleared!");
+
 };
